@@ -1,0 +1,37 @@
+# =============================================================
+# Pressable .deployignore
+# https://pressable.com/knowledgebase/deploy-from-github/
+#
+# IMPORTANT: Pressable's default sync DELETES any server files that
+# are absent from the repo. This repo only tracks our custom theme,
+# so without this file the first deploy would WIPE the site's other
+# plugins (Elementor, WooCommerce, Ninja Forms, etc.) and themes.
+#
+# Strategy: exclude EVERYTHING from the deploy, then explicitly allow
+# only our custom theme. Anything excluded here is left untouched on
+# the server (deployed-as-is = false; preserved). Syntax mirrors
+# .gitignore. This file must be committed BEFORE the first deploy.
+# =============================================================
+
+# Exclude everything (preserve on server, do not deploy/delete)...
+/*
+
+# ...but descend into wp-content
+!/wp-content/
+/wp-content/*
+
+# ...and within wp-content, only themes
+!/wp-content/themes/
+/wp-content/themes/*
+
+# ...and within themes, only our custom theme (fully managed by deploy)
+!/wp-content/themes/dch-fse/
+
+# Belt-and-suspenders: never deploy dev/build noise or VCS metadata,
+# even if it somehow lands inside the theme.
+.git/
+.gitignore
+.deployignore
+**/node_modules/
+**/.DS_Store
+**/*.log

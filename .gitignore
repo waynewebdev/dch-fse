@@ -8,6 +8,7 @@
 # Ignore everything at the root by default...
 /*
 !/.gitignore
+!/.deployignore
 
 # ...but descend into wp-content
 !/wp-content/

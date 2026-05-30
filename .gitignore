@@ -1,0 +1,31 @@
+# =============================================================
+# Pressable / WordPress deploy repo
+# Root contains /wp-content/. We version-control ONLY our custom
+# theme (wp-content/themes/dch-fse). WordPress core, uploads, and
+# third-party plugins/themes are excluded.
+# =============================================================
+
+# Ignore everything at the root by default...
+/*
+!/.gitignore
+
+# ...but descend into wp-content
+!/wp-content/
+/wp-content/*
+
+# ...and within wp-content, only keep themes
+!/wp-content/themes/
+/wp-content/themes/*
+
+# ...and within themes, only keep our custom theme
+!/wp-content/themes/dch-fse/
+
+# Never commit secrets or environment-specific config
+wp-config.php
+.env
+.env.local
+
+# OS / editor noise (also covered by the theme's own .gitignore)
+.DS_Store
+._*
+*.log

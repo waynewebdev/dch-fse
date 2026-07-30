@@ -737,6 +737,17 @@ body.dch-mobile-open .dch-mobile__panel { transform: translateX(0); }
 	border: 1px solid var(--dch-services-card-border);
 	background: transparent;
 	text-align: left;
+	text-decoration: none;
+	color: inherit;
+	transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+a.dch-services__card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 24px 48px -28px rgba(31, 36, 46, 0.25);
+	border-color: #C2A77B;
+}
+a.dch-services__card:hover .dch-services__card-icon {
+	color: #C2A77B;
 }
 
 .dch-services__card-icon {

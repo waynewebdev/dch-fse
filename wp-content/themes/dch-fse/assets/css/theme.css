@@ -4327,3 +4327,68 @@ a.dch-contact-page__label:focus-visible { color: #E0592E; outline: none; }
 	.dch-areas-list__arrow { width: 48px; height: 48px; }
 }
 
+
+/* =====================================================================
+ * /services/ services index: compact linked grid of every service page
+ * (rendered by inc/service-child.php -> dch/services-index)
+ * ===================================================================== */
+.dch-services-index {
+	padding: 0 70px 120px;
+	background: #FFFCF2;
+}
+.dch-services-index__inner {
+	max-width: 1564px;
+	margin-inline: auto;
+}
+.dch-services-index__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	gap: 24px;
+	margin-top: 48px;
+}
+.dch-services-index__card {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding: 36px 32px;
+	background: #FFFFFF;
+	border: 1px solid #EAE4CE;
+	color: #1F242E;
+	text-decoration: none;
+	transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+.dch-services-index__card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 24px 48px -28px rgba(31, 36, 46, 0.25);
+	border-color: #C2A77B;
+}
+.dch-services-index__name {
+	font-family: "Hanken Grotesk", sans-serif;
+	font-size: 1.35rem;
+	font-weight: 600;
+	line-height: 1.25;
+	margin: 0;
+}
+.dch-services-index__desc {
+	color: #5A5F68;
+	line-height: 1.55;
+	margin: 0;
+}
+.dch-services-index__arrow {
+	margin-top: auto;
+	color: #C2A77B;
+	display: inline-flex;
+}
+@media (max-width: 782px) {
+	.dch-services-index {
+		padding: 0 24px 72px;
+	}
+	.dch-services-index__grid {
+		grid-template-columns: 1fr;
+		gap: 16px;
+		margin-top: 32px;
+	}
+	.dch-services-index__card {
+		padding: 28px 24px;
+	}
+}

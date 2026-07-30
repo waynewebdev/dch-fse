@@ -2046,13 +2046,6 @@ a.dch-services__card:hover .dch-services__card-icon {
 .dch-footer__list a:hover,
 .dch-footer__list a:focus { color: var(--dch-accent); }
 
-.dch-footer__address {
-	margin-top: 15px;
-	color: var(--dch-footer-fg);
-	font-size: 16px;
-	line-height: 1.6;
-}
-
 /* Bottom bar */
 .dch-footer__bottom {
 	max-width: var(--dch-footer-max);

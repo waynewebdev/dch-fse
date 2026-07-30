@@ -2853,13 +2853,6 @@ a.dch-services__card:hover .dch-services__card-icon {
 	color: #1F242E;
 	max-width: 500px;
 }
-.dch-contact-page__lede {
-	margin: 0 0 35px;
-	font-family: 'DM Sans', sans-serif;
-	font-size: 16px;
-	line-height: 26px;
-	color: #8C897E;
-}
 .dch-contact-page__list {
 	list-style: none;
 	margin: 0;

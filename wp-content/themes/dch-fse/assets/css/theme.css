@@ -1799,23 +1799,11 @@ a.dch-services__card:hover .dch-services__card-icon {
 	background: #fff;
 }
 
-/* 2-column layout: Name + Email side by side, others full width.
- * Targets Ninja Forms grid wrapper if the form uses default field order.
- */
+/* Single-column layout: every field spans the full form width. */
 :is(.dch-contact, .dch-contact-page) .nf-form-fields-required,
 :is(.dch-contact, .dch-contact-page) .nf-form-content > .nf-row > .nf-cell,
 :is(.dch-contact, .dch-contact-page) .nf-form-content {
 	display: block;
-}
-@media (min-width: 700px) {
-	:is(.dch-contact, .dch-contact-page) .nf-form-content {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		column-gap: 19px;
-	}
-	:is(.dch-contact, .dch-contact-page) .nf-field-container { grid-column: 1 / -1; }
-	:is(.dch-contact, .dch-contact-page) .nf-field-container:nth-of-type(1),
-	:is(.dch-contact, .dch-contact-page) .nf-field-container:nth-of-type(2) { grid-column: span 1; }
 }
 
 /* Checkbox row */
@@ -1899,9 +1887,6 @@ a.dch-services__card:hover .dch-services__card-icon {
 	.dch-contact__photo { min-height: 360px; }
 	.dch-contact__copy { padding: 50px 24px; }
 	.dch-contact__heading { font-size: 32px; }
-	:is(.dch-contact, .dch-contact-page) .nf-form-content { grid-template-columns: 1fr; column-gap: 0; }
-	:is(.dch-contact, .dch-contact-page) .nf-field-container:nth-of-type(1),
-	:is(.dch-contact, .dch-contact-page) .nf-field-container:nth-of-type(2) { grid-column: 1 / -1; }
 }
 
 /* ===========================================================================

@@ -191,13 +191,9 @@ function dch_fse_home_recent_posts_render(): string {
 		return '';
 	}
 
-	$theme_uri = get_template_directory_uri();
-	$fallbacks = [
-		[ 'src' => $theme_uri . '/assets/images/blog-materials.jpg',  'w' => 924, 'h' => 678 ],
-		[ 'src' => $theme_uri . '/assets/images/blog-technology.jpg', 'w' => 924, 'h' => 962 ],
-		[ 'src' => $theme_uri . '/assets/images/blog-timeline.jpg',   'w' => 924, 'h' => 678 ],
-		[ 'src' => $theme_uri . '/assets/images/blog-contractor.jpg', 'w' => 924, 'h' => 962 ],
-	];
+	// No featured image -> a neutral 40% black placeholder block. Alternate the
+	// aspect ratio by position to preserve the short/tall/short/tall stagger.
+	$ratios = [ '924 / 678', '924 / 962', '924 / 678', '924 / 962' ];
 
 	ob_start();
 	?>
@@ -224,12 +220,10 @@ function dch_fse_home_recent_posts_render(): string {
 							'alt'      => '',
 						] );
 					} else {
-						$fb       = $fallbacks[ $i % count( $fallbacks ) ];
+						$ratio    = $ratios[ $i % count( $ratios ) ];
 						$img_html = sprintf(
-							'<img class="dch-blog__img" src="%1$s" alt="" width="%2$d" height="%3$d" loading="lazy" decoding="async">',
-							esc_url( $fb['src'] ),
-							(int) $fb['w'],
-							(int) $fb['h']
+							'<span class="dch-blog__img dch-blog__img--placeholder" style="aspect-ratio: %s;" aria-hidden="true"></span>',
+							esc_attr( $ratio )
 						);
 					}
 

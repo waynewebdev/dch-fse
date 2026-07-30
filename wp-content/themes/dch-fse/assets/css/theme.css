@@ -1452,6 +1452,9 @@ a.dch-services__card:hover .dch-services__card-icon {
 }
 .dch-blog__card:hover .dch-blog__img,
 .dch-blog__card:focus-visible .dch-blog__img { opacity: 0.85; }
+.dch-blog__img--placeholder {
+	background-color: rgba(0, 0, 0, 0.4);
+}
 
 .dch-blog__category {
 	font-family: "Hanken Grotesk", sans-serif;

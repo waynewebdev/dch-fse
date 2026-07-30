@@ -168,3 +168,112 @@ add_action( 'init', static function (): void {
 } );
 
 add_shortcode( 'dch_blog_loop', 'dch_fse_blog_render_loop' );
+
+/**
+ * Homepage "Home Building Resources" grid — the latest 4 posts rendered in the
+ * dch-blog__* card style. Posts without a featured image fall back to the four
+ * bundled blog placeholder images (cycled by position to preserve the
+ * short/tall/short/tall stagger of the original static grid).
+ */
+function dch_fse_home_recent_posts_render(): string {
+	$query = new WP_Query( [
+		'post_type'              => 'post',
+		'post_status'            => 'publish',
+		'posts_per_page'         => 4,
+		'orderby'                => 'date',
+		'order'                  => 'DESC',
+		'no_found_rows'          => true,
+		'ignore_sticky_posts'    => true,
+		'update_post_term_cache' => true,
+	] );
+
+	if ( ! $query->have_posts() ) {
+		return '';
+	}
+
+	$theme_uri = get_template_directory_uri();
+	$fallbacks = [
+		[ 'src' => $theme_uri . '/assets/images/blog-materials.jpg',  'w' => 924, 'h' => 678 ],
+		[ 'src' => $theme_uri . '/assets/images/blog-technology.jpg', 'w' => 924, 'h' => 962 ],
+		[ 'src' => $theme_uri . '/assets/images/blog-timeline.jpg',   'w' => 924, 'h' => 678 ],
+		[ 'src' => $theme_uri . '/assets/images/blog-contractor.jpg', 'w' => 924, 'h' => 962 ],
+	];
+
+	ob_start();
+	?>
+	<div class="dch-blog">
+		<div class="dch-blog__inner">
+			<div class="dch-blog__head">
+				<p class="dch-blog__eyebrow" data-dch-anim="block">Tips &amp; Insights</p>
+				<h2 class="dch-blog__heading" data-dch-anim="block">Home Building Resources</h2>
+			</div>
+			<div class="dch-blog__grid" data-dch-anim="block">
+				<?php
+				$i = 0;
+				while ( $query->have_posts() ) :
+					$query->the_post();
+					$post      = get_post();
+					$permalink = get_permalink( $post );
+					$title     = get_the_title( $post );
+
+					if ( has_post_thumbnail( $post ) ) {
+						$img_html = get_the_post_thumbnail( $post, 'large', [
+							'class'    => 'dch-blog__img',
+							'loading'  => 'lazy',
+							'decoding' => 'async',
+							'alt'      => '',
+						] );
+					} else {
+						$fb       = $fallbacks[ $i % count( $fallbacks ) ];
+						$img_html = sprintf(
+							'<img class="dch-blog__img" src="%1$s" alt="" width="%2$d" height="%3$d" loading="lazy" decoding="async">',
+							esc_url( $fb['src'] ),
+							(int) $fb['w'],
+							(int) $fb['h']
+						);
+					}
+
+					$cat_name = '';
+					$cats     = get_the_category( $post->ID );
+					if ( ! empty( $cats ) ) {
+						$primary = null;
+						foreach ( $cats as $c ) {
+							if ( 'uncategorized' !== $c->slug ) {
+								$primary = $c;
+								break;
+							}
+						}
+						if ( ! $primary ) {
+							$primary = $cats[0];
+						}
+						$cat_name = $primary->name;
+					}
+					?>
+					<a class="dch-blog__card" href="<?php echo esc_url( $permalink ); ?>">
+						<?php echo $img_html; ?>
+						<?php if ( '' !== $cat_name ) : ?>
+							<span class="dch-blog__category"><?php echo esc_html( $cat_name ); ?></span>
+						<?php endif; ?>
+						<h3 class="dch-blog__title"><?php echo esc_html( $title ); ?></h3>
+					</a>
+					<?php
+					$i++;
+				endwhile;
+				wp_reset_postdata();
+				?>
+			</div>
+		</div>
+	</div>
+	<?php
+	return preg_replace( '/>\s+</', '><', (string) ob_get_clean() );
+}
+
+add_action( 'init', static function (): void {
+	register_block_type( 'dch/recent-posts', [
+		'api_version'     => 3,
+		'title'           => 'DCH Recent Posts',
+		'category'        => 'theme',
+		'render_callback' => 'dch_fse_home_recent_posts_render',
+		'supports'        => [ 'html' => false ],
+	] );
+} );

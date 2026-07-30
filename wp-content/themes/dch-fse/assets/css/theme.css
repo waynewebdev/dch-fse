@@ -1560,47 +1560,6 @@ a.dch-services__card:hover .dch-services__card-icon {
 	flex-direction: column;
 }
 
-.dch-reviews__media {
-	position: relative;
-	overflow: hidden;
-}
-.dch-reviews__img {
-	display: block;
-	width: 100%;
-	height: 470px;
-	object-fit: cover;
-}
-.dch-reviews__play {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 58px;
-	height: 58px;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	border: 1px solid #fff;
-	border-radius: 50%;
-	color: #fff;
-	text-decoration: none;
-	transition: background-color 200ms ease, transform 200ms ease;
-	animation: dch-reviews-float 3s ease-in-out infinite;
-}
-.dch-reviews__play svg { width: 18px; height: 18px; margin-left: 3px; display: block; }
-.dch-reviews__play:hover,
-.dch-reviews__play:focus {
-	background-color: rgba(255, 255, 255, 0.15);
-	transform: translate(-50%, -50%) scale(1.05);
-}
-@keyframes dch-reviews-float {
-	0%, 100% { transform: translate(-50%, -50%); }
-	50%      { transform: translate(-50%, calc(-50% - 6px)); }
-}
-@media (prefers-reduced-motion: reduce) {
-	.dch-reviews__play { animation: none; }
-}
-
 .dch-reviews__quote {
 	margin: 23px 0 24px;
 	font-family: "DM Sans", sans-serif;
@@ -1648,12 +1607,10 @@ a.dch-services__card:hover .dch-services__card-icon {
 /* Responsive */
 @media (max-width: 1199.98px) {
 	.dch-reviews__heading { font-size: 48px; }
-	.dch-reviews__img { height: 380px; }
 }
 @media (max-width: 899.98px) {
 	.dch-reviews__grid { grid-template-columns: 1fr; gap: 50px; }
 	.dch-reviews__heading { font-size: 36px; }
-	.dch-reviews__img { height: 320px; }
 }
 @media (max-width: 767.98px) {
 	.dch-reviews__heading { font-size: 32px; }

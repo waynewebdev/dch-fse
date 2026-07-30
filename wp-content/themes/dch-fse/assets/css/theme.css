@@ -384,13 +384,6 @@ body.dch-mobile-open .dch-mobile__panel { transform: translateX(0); }
 	object-fit: cover;
 }
 .dch-hero__avatar + .dch-hero__avatar { margin-left: -17px; }
-.dch-hero__avatar--orig {
-	background-image: url('../images/avatars.webp');
-	background-repeat: no-repeat;
-	background-size: 196px 62px;
-}
-.dch-hero__avatar--1 { background-position: 0 0; }
-.dch-hero__avatar--2 { background-position: -45px 0; }
 .dch-hero__counter {
 	display: inline-flex;
 	align-items: baseline;

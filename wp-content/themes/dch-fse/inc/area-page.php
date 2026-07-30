@@ -179,6 +179,86 @@ function dch_fse_area_data(): array {
 				'image_alt' => 'Hill Country estate built by Dynamic Custom Homes',
 			],
 		],
+
+		// Added from 2026-07-30 owner meeting. Copy is a draft for review.
+		// TODO: replace placeholder card/hero/split images with real Marble Falls photos
+		// (intended: area-marble-falls.jpg). Currently reusing existing images.
+		'marble-falls' => [
+			'name'          => 'Marble Falls',
+			'card_subtitle' => 'Meadowlakes &middot; Gregg Ranch &middot; The Legends',
+			'card_image'    => $theme_img . 'area-hill-country.jpg', // TODO: placeholder
+			'eyebrow'       => 'Marble Falls, Texas',
+			'title'         => 'Custom Home Builder in Marble Falls, Texas',
+			'lede'          => 'Dynamic Custom Homes builds custom homes in Marble Falls and across the Highland Lakes. With over 17 years of experience in the Texas Hill Country, we understand the granite terrain, lakefront lots, and relaxed river-and-lake lifestyle that make this corner of Burnet County special.',
+			'image'         => $theme_img . 'area-hill-country.jpg', // TODO: placeholder
+			'image_alt'     => 'Custom home in Marble Falls, TX by Dynamic Custom Homes',
+			'communities'   => [
+				'eyebrow' => 'Marble Falls Communities',
+				'heading' => 'Where we build around Marble Falls',
+				'lede'    => 'From lakefront lots on Lake Marble Falls to gated fairway communities, we build across the Highland Lakes region &mdash; on terrain that ranges from granite outcrops to gentle riverfront acreage.',
+				'items'   => [ 'Meadowlakes', 'Gregg Ranch', 'The Legends', 'Blue Lake', 'Horseshoe Bay', 'Burnet County' ],
+			],
+			'split' => [
+				'eyebrow'   => 'Why Marble Falls',
+				'heading'   => 'Building for Highland Lakes living',
+				'body'      => '<p>Marble Falls sits at the heart of the Highland Lakes, where the Colorado River widens into a chain of lakes prized for boating, fishing, and waterfront living. It offers small-town Hill Country charm within easy reach of both Austin and San Antonio.</p><p>Building here means designing for lake views and outdoor living while accounting for granite bedrock and sloped lots &mdash; work that rewards an experienced local builder.</p>',
+				'image'     => $theme_img . 'project-graystone-circle.jpg', // TODO: placeholder
+				'image_alt' => 'Marble Falls custom home built by Dynamic Custom Homes',
+			],
+		],
+
+		// TODO: replace placeholder images with real Horseshoe Bay photos
+		// (intended: area-horseshoe-bay.jpg).
+		'horseshoe-bay' => [
+			'name'          => 'Horseshoe Bay',
+			'card_subtitle' => 'Applehead Island &middot; Escondido &middot; The Waters',
+			'card_image'    => $theme_img . 'area-boerne.jpg', // TODO: placeholder
+			'eyebrow'       => 'Horseshoe Bay, Texas',
+			'title'         => 'Custom Home Builder in Horseshoe Bay, Texas',
+			'lede'          => 'Dynamic Custom Homes builds custom and luxury homes in Horseshoe Bay, the resort community on the shores of Lake LBJ. With over 17 years of Hill Country experience, we specialize in waterfront and golf-course homes built to the exacting standards this community is known for.',
+			'image'         => $theme_img . 'area-boerne.jpg', // TODO: placeholder
+			'image_alt'     => 'Custom home in Horseshoe Bay, TX by Dynamic Custom Homes',
+			'communities'   => [
+				'eyebrow' => 'Horseshoe Bay Communities',
+				'heading' => 'Where we build in Horseshoe Bay',
+				'lede'    => 'From waterfront lots on constant-level Lake LBJ to the resort&rsquo;s championship golf communities, we build across Horseshoe Bay &mdash; where shoreline rules and resort design guidelines demand an experienced builder.',
+				'items'   => [ 'Applehead Island', 'Escondido', 'The Waters', 'Tremolo', 'Summit Rock', 'Llano County' ],
+			],
+			'split' => [
+				'eyebrow'   => 'Why Horseshoe Bay',
+				'heading'   => 'Waterfront and fairway homes, custom-built',
+				'body'      => '<p>Horseshoe Bay is one of Central Texas&rsquo;s premier resort communities, known for constant-level Lake LBJ, championship golf, and a marina lifestyle just an hour from Austin.</p><p>Building here means meeting the community&rsquo;s architectural standards while making the most of waterfront and fairway lots &mdash; the kind of detail-driven work that defines a luxury custom home.</p>',
+				'image'     => $theme_img . 'project-southwick-ranch.jpg', // TODO: placeholder
+				'image_alt' => 'Horseshoe Bay custom home built by Dynamic Custom Homes',
+			],
+		],
+
+		// TODO: replace placeholder images with real Canyon Lake photos
+		// (intended: area-canyon-lake.jpg). Note: Canyon Lake also appears as a
+		// community under New Braunfels; it now has its own area page as well.
+		'canyon-lake' => [
+			'name'          => 'Canyon Lake',
+			'card_subtitle' => 'Canyon Lake Hills &middot; Cordova Bend &middot; Mystic Shores',
+			'card_image'    => $theme_img . 'area-new-braunfels.jpg', // TODO: placeholder
+			'eyebrow'       => 'Canyon Lake, Texas',
+			'title'         => 'Custom Home Builder in Canyon Lake, Texas',
+			'lede'          => 'Dynamic Custom Homes builds custom homes around Canyon Lake, the Hill Country reservoir between New Braunfels and San Antonio. With over 17 years of Comal County experience, we build on the wooded, often-sloped lots that surround the lake &mdash; with the drainage and foundation know-how they require.',
+			'image'         => $theme_img . 'area-new-braunfels.jpg', // TODO: placeholder
+			'image_alt'     => 'Custom home in Canyon Lake, TX by Dynamic Custom Homes',
+			'communities'   => [
+				'eyebrow' => 'Canyon Lake Communities',
+				'heading' => 'Where we build around Canyon Lake',
+				'lede'    => 'From gated lakeview subdivisions to acreage in the surrounding hills, we build across the Canyon Lake area &mdash; on lots where slope, rock, and tree preservation shape the design.',
+				'items'   => [ 'Canyon Lake Hills', 'Cordova Bend', 'Mystic Shores', 'Sattler', 'Startzville', 'Comal County' ],
+			],
+			'split' => [
+				'eyebrow'   => 'Why Canyon Lake',
+				'heading'   => 'Lakeside Hill Country living',
+				'body'      => '<p>Canyon Lake offers miles of shoreline, clear water, and wooded hills within an easy drive of both San Antonio and Austin &mdash; a quieter, more natural alternative to the busier lake towns.</p><p>Building here means designing for views and the outdoors while managing sloped, rocky lots and mature trees &mdash; exactly the terrain we know from nearly two decades of building across Comal County.</p>',
+				'image'     => $theme_img . 'project-8815-terra-mont-way.jpg', // TODO: placeholder
+				'image_alt' => 'Canyon Lake custom home built by Dynamic Custom Homes',
+			],
+		],
 	];
 }
 

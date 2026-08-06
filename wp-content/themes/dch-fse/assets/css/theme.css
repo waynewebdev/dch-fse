@@ -2049,6 +2049,13 @@ footer.wp-block-template-part { margin-block-start: 0; }
 .dch-footer__list a:hover,
 .dch-footer__list a:focus { color: var(--dch-accent); }
 
+/* Heading-less link column: nudge it down to line up with the other lists. */
+nav.dch-footer__col:not(:has(.dch-footer__heading)) { padding-top: 47px; }
+
+.dch-footer__contact a { display: inline-flex; align-items: center; gap: 10px; }
+.dch-footer__icon { display: inline-flex; color: var(--dch-accent); flex: 0 0 auto; }
+.dch-footer__icon svg { display: block; }
+
 /* Bottom bar */
 .dch-footer__bottom {
 	max-width: var(--dch-footer-max);
@@ -2085,6 +2092,7 @@ footer.wp-block-template-part { margin-block-start: 0; }
 		padding-block: 60px;
 	}
 	.dch-footer__brand { grid-column: auto; max-width: none; margin-bottom: 0; }
+	nav.dch-footer__col:not(:has(.dch-footer__heading)) { padding-top: 0; }
 	.dch-footer__bottom { flex-direction: column; align-items: flex-start; gap: 8px; padding-block: 24px; }
 }
 

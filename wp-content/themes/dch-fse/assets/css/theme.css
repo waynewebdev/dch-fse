@@ -3728,6 +3728,14 @@ a.dch-contact-page__label:focus-visible { color: #E0592E; outline: none; }
 	border-color: #1F242E;
 	transform: translateY(-2px);
 }
+.dch-about-values__icon {
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin-bottom: 20px;
+	color: #C2A77B;
+}
+.dch-about-values__icon svg { width: 100%; height: 100%; display: block; }
 .dch-about-values__title {
 	margin: 0 0 16px;
 	font-family: 'Hanken Grotesk', sans-serif;

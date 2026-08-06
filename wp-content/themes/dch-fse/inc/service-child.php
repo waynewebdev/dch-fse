@@ -71,10 +71,10 @@ function dch_fse_service_child_data(): array {
 		'custom-home-building' => [
 			'eyebrow'   => 'Custom Home Building',
 			'title'     => 'Custom Home Builder in San Antonio &amp; Central Texas',
-			'lede'      => 'Already have house plans, or know exactly what you want to build? Dynamic Custom Homes builds your home to spec on your lot anywhere in Central Texas. With over 17 years of experience, owner Joshua Maas and our team turn finished plans into a finished home &mdash; with transparent cost-plus pricing and clear communication at every stage.',
+			'lede'      => 'Already have house plans, or know exactly what you want to build? Dynamic Custom Homes builds your home to spec on your lot anywhere in Central Texas. With over 17 years of experience, owner Joshua Maas and our team turn finished plans into a finished home, with transparent cost-plus pricing and clear communication at every stage.',
 			'image'     => '/wp-content/themes/dch-fse/assets/images/svc-custom-hero.webp',
 			'image_alt' => 'Custom Hill Country home built to spec by Dynamic Custom Homes',
-			'card_desc' => 'Have a plan already? We build your custom home to spec on your lot anywhere in Central Texas &mdash; tailored to your vision, budget, and timeline.',
+			'card_desc' => 'Have a plan already? We build your custom home to spec on your lot anywhere in Central Texas, tailored to your vision, budget, and timeline.',
 			'card_image' => '/wp-content/themes/dch-fse/assets/images/project-southwick-ranch.jpg',
 			'blocks'    => [
 				[
@@ -82,7 +82,7 @@ function dch_fse_service_child_data(): array {
 					'eyebrow' => 'Our Custom Home Building Process',
 					'heading' => 'From your plans to move-in day',
 					'steps'   => [
-						[ 'title' => 'Consultation &amp; Lot Evaluation', 'desc' => 'We review your plans, vision, budget, and timeline &mdash; and evaluate your lot, whether you already own land or need help finding the right one.' ],
+						[ 'title' => 'Consultation &amp; Lot Evaluation', 'desc' => 'We review your plans, vision, budget, and timeline, then evaluate your lot, whether you already own land or need help finding the right one.' ],
 						[ 'title' => 'Plan Review &amp; Engineering',     'desc' => 'We take your existing plans, value-engineer them for your budget, and coordinate the structural and civil engineering needed to build them right.' ],
 						[ 'title' => 'Selections &amp; Permitting',       'desc' => 'Choose your finishes alongside our team while we handle every permit, inspection, and approval behind the scenes.' ],
 						[ 'title' => 'Construction &amp; Move-In',        'desc' => 'Quality construction with regular progress updates, transparent budgeting, and a final walkthrough before you turn the key.' ],
@@ -108,10 +108,10 @@ function dch_fse_service_child_data(): array {
 		'home-remodeling' => [
 			'eyebrow'   => 'Home Remodeling',
 			'title'     => 'Luxury Home Remodeling in San Antonio &amp; Central Texas',
-			'lede'      => 'This isn&rsquo;t your ordinary home remodel. Dynamic Custom Homes brings full custom-home craftsmanship to large-scale renovations across San Antonio and the Hill Country &mdash; high-end kitchens and baths, major additions, and whole-home transformations for established homes that deserve better than a quick refresh.',
+			'lede'      => 'This isn&rsquo;t your ordinary home remodel. Dynamic Custom Homes brings full custom-home craftsmanship to large-scale renovations across San Antonio and the Hill Country: high-end kitchens and baths, major additions, and whole-home transformations for established homes that deserve better than a quick refresh.',
 			'image'     => '/wp-content/themes/dch-fse/assets/images/svc-remodel-hero.webp',
 			'image_alt' => 'Renovated luxury kitchen by Dynamic Custom Homes in San Antonio',
-			'card_desc' => 'Not your ordinary remodel &mdash; large-scale renovations and additions built to full custom-home standards for established homes.',
+			'card_desc' => 'Not your ordinary remodel. Large-scale renovations and additions built to full custom-home standards for established homes.',
 			'card_image' => '/wp-content/themes/dch-fse/assets/images/project-graystone-circle.jpg',
 			'blocks'    => [
 				[
@@ -130,7 +130,7 @@ function dch_fse_service_child_data(): array {
 					'type'    => 'split',
 					'eyebrow' => 'Why Choose Dynamic Custom Homes',
 					'heading' => 'Renovation expertise built on 17 years of custom-home craft',
-					'body'    => '<p>With over 17 years of experience building and remodeling homes across San Antonio, Boerne, New Braunfels, and the Hill Country, we understand the unique challenges of renovation projects.</p><p>Our approach combines transparent communication, quality materials, and skilled craftsmanship to deliver results that exceed expectations &mdash; on the schedule and the budget we set together.</p>',
+					'body'    => '<p>With over 17 years of experience building and remodeling homes across San Antonio, Boerne, New Braunfels, and the Hill Country, we understand the unique challenges of renovation projects.</p><p>Our approach combines transparent communication, quality materials, and skilled craftsmanship to deliver results that exceed expectations, on the schedule and the budget we set together.</p>',
 					'image'   => '/wp-content/themes/dch-fse/assets/images/svc-remodel-detail.webp',
 					'image_alt' => 'Luxury master bathroom remodel by Dynamic Custom Homes',
 				],
@@ -140,17 +140,17 @@ function dch_fse_service_child_data(): array {
 		'design-build' => [
 			'eyebrow'   => 'Design-Build',
 			'title'     => 'Design-Build Home Builder in San Antonio &amp; Central Texas',
-			'lede'      => 'Starting from a blank page? With our design-build approach, we develop your plans together from the very beginning &mdash; then build them. One team, one contract, and one point of contact from first sketch to move-in day, anywhere in Central Texas.',
+			'lede'      => 'Starting from a blank page? With our design-build approach, we develop your plans together from the very beginning, then build them. One team, one contract, one point of contact, from first sketch to move-in day anywhere in Central Texas.',
 			'image'     => '/wp-content/themes/dch-fse/assets/images/svc-designbuild-hero.webp',
 			'image_alt' => 'Modern design-build custom home by Dynamic Custom Homes',
-			'card_desc' => 'No plans yet? We develop your design together from the start, then build it &mdash; one team, one contract, start to finish.',
+			'card_desc' => 'No plans yet? We develop your design together from the start, then build it. One team, one contract, start to finish.',
 			'card_image' => '/wp-content/themes/dch-fse/assets/images/project-8634-terra-mont-way.jpg',
 			'blocks'    => [
 				[
 					'type'    => 'split',
 					'eyebrow' => 'What Is Design-Build?',
 					'heading' => 'One team for design and construction',
-					'body'    => '<p>Design-build means one team handles both the architectural design and construction of your home. Instead of hiring an architect separately and then finding a builder, Dynamic Custom Homes manages the entire process.</p><p>This streamlined approach means better communication, fewer delays, and a final product that matches your original vision &mdash; without the friction of two contracts and two timelines.</p>',
+					'body'    => '<p>Design-build means one team handles both the architectural design and construction of your home. Instead of hiring an architect separately and then finding a builder, Dynamic Custom Homes manages the entire process.</p><p>One team means better communication, fewer delays, and a home that matches your original vision, without the friction of two contracts and two timelines.</p>',
 					'image'   => '/wp-content/themes/dch-fse/assets/images/svc-designbuild-detail.webp',
 					'image_alt' => 'Open-concept living and dining in a Dynamic Custom Homes design-build',
 				],
@@ -160,7 +160,7 @@ function dch_fse_service_child_data(): array {
 					'heading' => 'Why our clients choose the integrated approach',
 					'lede'    => 'Pulling design and construction under one roof saves time, money, and the headache of coordinating between teams that don&rsquo;t share priorities.',
 					'tiles'   => [
-						[ 'icon' => 'point',    'title' => 'Single Point of Contact', 'desc' => 'One team from start to finish &mdash; no handoffs, no finger-pointing, no gaps between design intent and construction.' ],
+						[ 'icon' => 'point',    'title' => 'Single Point of Contact', 'desc' => 'One team from start to finish, with no handoffs or gaps between design intent and construction.' ],
 						[ 'icon' => 'budget',   'title' => 'Cost Efficiency',         'desc' => 'Integrated budgeting prevents surprises. We price as we design, so you always know what your decisions cost.' ],
 						[ 'icon' => 'speed',    'title' => 'Faster Timelines',        'desc' => 'Design and pre-construction happen in parallel, compressing months out of the traditional process.' ],
 						[ 'icon' => 'vision',   'title' => 'Consistent Vision',       'desc' => 'Your design intent carries through every construction detail because the same team owns both phases.' ],
@@ -172,10 +172,10 @@ function dch_fse_service_child_data(): array {
 		'luxury-homes' => [
 			'eyebrow'   => 'Luxury Homes',
 			'title'     => 'Luxury Custom Homes in San Antonio &amp; Central Texas',
-			'lede'      => 'Luxury isn&rsquo;t only for the top of the market. Dynamic Custom Homes builds thoughtfully elevated custom homes &mdash; typically in the $500K to $1 million range &mdash; for move-up families across San Antonio and the Hill Country who want premium finishes and real craftsmanship without an ultra-luxury price tag.',
+			'lede'      => 'Luxury isn&rsquo;t only for the top of the market. Dynamic Custom Homes builds elevated custom homes, typically in the $500K to $1 million range, for move-up families across San Antonio and the Hill Country who want premium finishes and real craftsmanship without an ultra-luxury price tag.',
 			'image'     => '/wp-content/themes/dch-fse/assets/images/svc-luxury-hero.webp',
 			'image_alt' => 'Luxury custom home living room by Dynamic Custom Homes near San Antonio',
-			'card_desc' => 'Thoughtfully elevated homes for move-up families &mdash; premium finishes and craftsmanship, typically in the $500K&ndash;$1M range.',
+			'card_desc' => 'Elevated homes for move-up families: premium finishes and craftsmanship, typically in the $500K to $1M range.',
 			'card_image' => '/wp-content/themes/dch-fse/assets/images/project-8815-terra-mont-way.jpg',
 			'blocks'    => [
 				[
@@ -194,7 +194,7 @@ function dch_fse_service_child_data(): array {
 					'type'    => 'communities',
 					'eyebrow' => 'Luxury Home Communities We Serve',
 					'heading' => 'Where we build across San Antonio &amp; the Hill Country',
-					'lede'    => 'From established San Antonio neighborhoods to Hill Country acreage, we build elevated custom homes where families actually want to put down roots &mdash; with the same quiet, on-schedule execution we&rsquo;re known for.',
+					'lede'    => 'From established San Antonio neighborhoods to Hill Country acreage, we build elevated custom homes where families actually want to put down roots, with the same quiet, on-schedule execution we&rsquo;re known for.',
 					'items'   => [ 'The Dominion', 'Shavano Park', 'Stone Oak', 'Boerne', 'New Braunfels', 'Texas Hill Country' ],
 				],
 			],
@@ -203,16 +203,16 @@ function dch_fse_service_child_data(): array {
 		'semi-custom-homes' => [
 			'eyebrow' => 'Semi-Custom Homes',
 			'title' => 'Semi-Custom Home Plans in San Antonio &amp; Central Texas',
-			'lede' => 'Start from one of our proven floor plans and make it yours. Semi-custom homes from Dynamic Custom Homes give you the personalization of a custom build with the predictable pricing and faster timeline of a refined, ready-to-adapt plan &mdash; ideal for move-up families across San Antonio and the Hill Country.',
+			'lede' => 'Start from one of our proven floor plans and make it yours. Semi-custom homes from Dynamic Custom Homes give you the personalization of a custom build with the predictable pricing and faster timeline of a refined, ready-to-adapt plan. It&rsquo;s ideal for move-up families across San Antonio and the Hill Country.',
 			'image' => '/wp-content/themes/dch-fse/assets/images/svc-semicustom-hero.webp',
 			'image_alt' => 'Semi-custom home built by Dynamic Custom Homes in the Texas Hill Country',
-			'card_desc' => 'Personalize one of our proven floor plans &mdash; the flexibility of custom with predictable pricing and a faster timeline.',
+			'card_desc' => 'Personalize one of our proven floor plans: the flexibility of custom with predictable pricing and a faster timeline.',
 			'card_image' => '/wp-content/themes/dch-fse/assets/images/area-new-braunfels.jpg',
 			'blocks'    => [
 				[
 					'type'    => 'process',
 					'eyebrow' => 'How Semi-Custom Works',
-					'heading' => 'Your plan, your way &mdash; without starting from scratch',
+					'heading' => 'Your plan, your way, without starting from scratch',
 					'steps'   => [
 						[ 'title' => 'Choose a Plan', 'desc' => 'Start with one of our curated floor plans, each already refined for how Central Texas families actually live.' ],
 						[ 'title' => 'Personalize the Layout', 'desc' => 'Adjust rooms, ceilings, and elevations to fit your lot and lifestyle, with our team flagging what&rsquo;s simple and what adds cost.' ],
@@ -238,10 +238,10 @@ function dch_fse_service_child_data(): array {
 		'lot-consulting' => [
 			'eyebrow' => 'Lot Consulting',
 			'title' => 'Lot Consulting &amp; Land Evaluation in Central Texas',
-			'lede' => 'Before you buy, know what you&rsquo;re building on. Dynamic Custom Homes evaluates lots across San Antonio and the Hill Country for slope, soil, drainage, utilities, setbacks, and HOA rules &mdash; so you don&rsquo;t inherit a five-figure surprise after closing.',
+			'lede' => 'Before you buy, know what you&rsquo;re building on. Dynamic Custom Homes evaluates lots across San Antonio and the Hill Country for slope, soil, drainage, utilities, setbacks, and HOA rules, so you don&rsquo;t inherit a five-figure surprise after closing.',
 			'image' => '/wp-content/themes/dch-fse/assets/images/svc-lot-hero.webp',
 			'image_alt' => 'Texas Hill Country land with bluebonnets, evaluated for building by Dynamic Custom Homes',
-			'card_desc' => 'Thinking about a lot? We evaluate slope, soil, utilities, and restrictions before you buy &mdash; so nothing surprises you later.',
+			'card_desc' => 'Thinking about a lot? We evaluate slope, soil, utilities, and restrictions before you buy, so nothing surprises you later.',
 			'card_image' => '/wp-content/themes/dch-fse/assets/images/area-hill-country.jpg',
 			'blocks'    => [
 				[
@@ -250,17 +250,17 @@ function dch_fse_service_child_data(): array {
 					'heading' => 'The questions that decide what a lot really costs to build on',
 					'lede'    => 'Two lots at the same price can differ by tens of thousands once you account for what it takes to build. Here&rsquo;s what we check.',
 					'tiles'   => [
-						[ 'icon' => 'lot', 'title' => 'Slope &amp; Grading', 'desc' => 'Steep or uneven lots drive up excavation, foundation, and drainage costs &mdash; we quantify it early.' ],
+						[ 'icon' => 'lot', 'title' => 'Slope &amp; Grading', 'desc' => 'Steep or uneven lots drive up excavation, foundation, and drainage costs. We quantify that early.' ],
 						[ 'icon' => 'materials', 'title' => 'Soil &amp; Foundation', 'desc' => 'Rock and expansive clay soils dictate foundation design and budget across the Hill Country.' ],
 						[ 'icon' => 'smart', 'title' => 'Utilities &amp; Access', 'desc' => 'Water, septic, electric, and driveway access can add significant cost on rural and acreage lots.' ],
-						[ 'icon' => 'vision', 'title' => 'Setbacks &amp; HOA', 'desc' => 'Setbacks, easements, and HOA rules shape what &mdash; and where &mdash; you&rsquo;re actually allowed to build.' ],
+						[ 'icon' => 'vision', 'title' => 'Setbacks &amp; HOA', 'desc' => 'Setbacks, easements, and HOA rules shape what you can build, and where.' ],
 					],
 				],
 				[
 					'type'    => 'split',
 					'eyebrow' => 'Why It Matters',
 					'heading' => 'Lock in the right lot before a competitor does',
-					'body'    => '<p>Many move-up buyers have the budget for a custom home but no land &mdash; and no easy way to tell a buildable lot from an expensive one. That&rsquo;s where we come in.</p><p>By evaluating a property before you buy, we help you negotiate with confidence, budget accurately, and avoid the foundation, drainage, and access surprises that derail so many projects.</p>',
+					'body'    => '<p>Many move-up buyers have the budget for a custom home but no land, and no easy way to tell a buildable lot from an expensive one. That&rsquo;s where we come in.</p><p>By evaluating a property before you buy, we help you negotiate with confidence, budget accurately, and avoid the foundation, drainage, and access surprises that derail so many projects.</p>',
 					'image'   => '/wp-content/themes/dch-fse/assets/images/svc-lot-detail.webp',
 					'image_alt' => 'Custom home on a wooded Hill Country lot by Dynamic Custom Homes',
 				],
@@ -270,29 +270,29 @@ function dch_fse_service_child_data(): array {
 		'energy-efficient-homes' => [
 			'eyebrow' => 'Energy-Efficient Homes',
 			'title' => 'Energy-Efficient &amp; High-Performance Homes in Central Texas',
-			'lede' => 'Lower bills, quieter rooms, and a healthier home. Dynamic Custom Homes builds high-performance homes across San Antonio and the Hill Country that go beyond code &mdash; with tighter building envelopes, better HVAC, and solar-ready and net-zero options.',
+			'lede' => 'Lower bills, quieter rooms, and a healthier home. Dynamic Custom Homes builds high-performance homes across San Antonio and the Hill Country that go beyond code, with tighter building envelopes, better HVAC, and solar-ready and net-zero options.',
 			'image' => '/wp-content/themes/dch-fse/assets/images/svc-energy-hero.webp',
 			'image_alt' => 'Bright, high-performance custom home interior by Dynamic Custom Homes',
-			'card_desc' => 'Go beyond code with tighter envelopes, high-efficiency HVAC, and solar-ready options &mdash; lower bills and a healthier home.',
+			'card_desc' => 'Go beyond code with tighter envelopes, high-efficiency HVAC, and solar-ready options, for lower bills and a healthier home.',
 			'card_image' => '/wp-content/themes/dch-fse/assets/images/project-8634-terra-mont-way.jpg',
 			'blocks'    => [
 				[
 					'type'    => 'tiles',
 					'eyebrow' => 'High-Performance Packages',
 					'heading' => 'Comfort and efficiency built in from the framing up',
-					'lede'    => 'Performance isn&rsquo;t an upgrade you bolt on later &mdash; it&rsquo;s engineered into the home from the start. Choose the level that fits your goals.',
+					'lede'    => 'Performance isn&rsquo;t an upgrade you bolt on later. It&rsquo;s engineered into the home from the start. Choose the level that fits your goals.',
 					'tiles'   => [
 						[ 'icon' => 'leaf', 'title' => 'Tight Building Envelope', 'desc' => 'Advanced insulation, air sealing, and high-performance windows keep conditioned air where it belongs.' ],
 						[ 'icon' => 'smart', 'title' => 'High-Efficiency HVAC', 'desc' => 'Right-sized, zoned systems and fresh-air ventilation for even temperatures and better indoor air.' ],
 						[ 'icon' => 'outdoor', 'title' => 'Solar-Ready &amp; Net-Zero', 'desc' => 'Optional solar pre-wiring, battery readiness, and net-zero tiers for the lowest possible operating cost.' ],
-						[ 'icon' => 'budget', 'title' => 'Lower Operating Cost', 'desc' => 'A more efficient home costs less to run every month &mdash; and holds value as energy prices rise.' ],
+						[ 'icon' => 'budget', 'title' => 'Lower Operating Cost', 'desc' => 'A more efficient home costs less to run every month, and holds its value as energy prices rise.' ],
 					],
 				],
 				[
 					'type'    => 'includes',
 					'eyebrow' => 'What&rsquo;s Included',
 					'heading' => 'Performance you can measure',
-					'lede'    => 'Every high-performance build is documented and verified &mdash; not just promised.',
+					'lede'    => 'Every high-performance build is documented and verified, not just promised.',
 					'image'   => '/wp-content/themes/dch-fse/assets/images/svc-energy-detail.webp',
 					'items'   => [
 						'Blower-door tested air sealing',
@@ -308,10 +308,10 @@ function dch_fse_service_child_data(): array {
 		'outdoor-living' => [
 			'eyebrow' => 'Outdoor Living',
 			'title' => 'Custom Outdoor Living, Casitas &amp; ADUs in Central Texas',
-			'lede' => 'Extend your home past the back door. Dynamic Custom Homes builds outdoor kitchens, covered patios, casitas, ADUs, and detached shops across San Antonio and the Hill Country &mdash; the spaces that make Texas living year-round.',
+			'lede' => 'Extend your home past the back door. Dynamic Custom Homes builds outdoor kitchens, covered patios, casitas, ADUs, and detached shops across San Antonio and the Hill Country, the spaces that make Texas living work year-round.',
 			'image' => '/wp-content/themes/dch-fse/assets/images/svc-outdoor-hero.webp',
 			'image_alt' => 'Custom pool and outdoor living at twilight by Dynamic Custom Homes',
-			'card_desc' => 'Outdoor kitchens, covered patios, casitas, ADUs, and detached shops &mdash; built to the same standard as the main house.',
+			'card_desc' => 'Outdoor kitchens, covered patios, casitas, ADUs, and detached shops, all built to the same standard as the main house.',
 			'card_image' => '/wp-content/themes/dch-fse/assets/images/area-boerne.jpg',
 			'blocks'    => [
 				[
@@ -330,7 +330,7 @@ function dch_fse_service_child_data(): array {
 					'type'    => 'split',
 					'eyebrow' => 'Why Add On',
 					'heading' => 'More home, more value, without moving',
-					'body'    => '<p>Outdoor living and accessory structures are among the highest-impact ways to add usable space and value to a property &mdash; and they let you get more out of the home you already love.</p><p>Because we build them to the same standard as our custom homes, additions look intentional and original, never bolted on.</p>',
+					'body'    => '<p>Outdoor living and accessory structures are among the highest-impact ways to add usable space and value to a property, and they let you get more out of the home you already love.</p><p>Because we build them to the same standard as our custom homes, additions look intentional and original, never bolted on.</p>',
 					'image'   => '/wp-content/themes/dch-fse/assets/images/svc-outdoor-detail.webp',
 					'image_alt' => 'Backyard pool and spa built by Dynamic Custom Homes',
 				],
@@ -340,10 +340,10 @@ function dch_fse_service_child_data(): array {
 		'warranty-home-care' => [
 			'eyebrow' => 'Homeowner Care',
 			'title' => 'Home Warranty &amp; Homeowner Care Program in Central Texas',
-			'lede' => 'Our relationship doesn&rsquo;t end at handover. Every Dynamic Custom Homes build comes with a structured warranty and homeowner care program &mdash; defined response times, scheduled walkthroughs, and clear maintenance guidance for the life of your home.',
+			'lede' => 'Our relationship doesn&rsquo;t end at handover. Every Dynamic Custom Homes build comes with a structured warranty and homeowner care program: defined response times, scheduled walkthroughs, and clear maintenance guidance for the life of your home.',
 			'image' => '/wp-content/themes/dch-fse/assets/images/svc-warranty-hero.webp',
 			'image_alt' => 'Finished custom home living room by Dynamic Custom Homes',
-			'card_desc' => 'A formal warranty and care program &mdash; scheduled walkthroughs, defined response times, and maintenance guidance after move-in.',
+			'card_desc' => 'A formal warranty and care program: scheduled walkthroughs, defined response times, and maintenance guidance after move-in.',
 			'card_image' => '/wp-content/themes/dch-fse/assets/images/about-52.jpg',
 			'blocks'    => [
 				[
@@ -361,7 +361,7 @@ function dch_fse_service_child_data(): array {
 					'type'    => 'tiles',
 					'eyebrow' => 'What&rsquo;s Covered',
 					'heading' => 'Clear coverage, clear expectations',
-					'lede'    => 'You&rsquo;ll know exactly what&rsquo;s covered and how quickly we respond &mdash; in writing, from day one.',
+					'lede'    => 'You&rsquo;ll know exactly what&rsquo;s covered and how quickly we respond, in writing, from day one.',
 					'tiles'   => [
 						[ 'icon' => 'shield', 'title' => 'Structural Warranty', 'desc' => 'Long-term coverage on the structural elements that matter most.' ],
 						[ 'icon' => 'smart', 'title' => 'Systems &amp; Workmanship', 'desc' => 'Warranty coverage on the systems and craftsmanship throughout your home.' ],
@@ -375,10 +375,10 @@ function dch_fse_service_child_data(): array {
 		'selections-management' => [
 			'eyebrow' => 'Selections &amp; Allowances',
 			'title' => 'Allowance &amp; Selections Management for Custom Homes',
-			'lede' => 'The fun part shouldn&rsquo;t be the overwhelming part. Our selections coordinator walks you through every finish, fixture, and upgrade with clear allowances and transparent pricing &mdash; so you always know what a choice costs before you make it.',
+			'lede' => 'The fun part shouldn&rsquo;t be the overwhelming part. Our selections coordinator walks you through every finish, fixture, and upgrade with clear allowances and transparent pricing, so you always know what a choice costs before you make it.',
 			'image' => '/wp-content/themes/dch-fse/assets/images/svc-selections-hero.webp',
 			'image_alt' => 'Custom kitchen finishes and selections by Dynamic Custom Homes',
-			'card_desc' => 'A guided selections process with clear allowances and real-time pricing &mdash; so finishes stay fun and your budget stays intact.',
+			'card_desc' => 'A guided selections process with clear allowances and real-time pricing, so finishes stay fun and your budget stays intact.',
 			'card_image' => '/wp-content/themes/dch-fse/assets/images/project-graystone-circle.jpg',
 			'blocks'    => [
 				[
@@ -388,7 +388,7 @@ function dch_fse_service_child_data(): array {
 					'steps'   => [
 						[ 'title' => 'Set Your Allowances', 'desc' => 'We establish clear, realistic allowances for every category up front, so your budget is built on real numbers.' ],
 						[ 'title' => 'Guided Appointments', 'desc' => 'Your selections coordinator schedules focused appointments so choices never pile up all at once.' ],
-						[ 'title' => 'Real-Time Pricing', 'desc' => 'See how each upgrade affects your budget the moment you choose it &mdash; no end-of-project surprises.' ],
+						[ 'title' => 'Real-Time Pricing', 'desc' => 'See how each upgrade affects your budget the moment you choose it, with no end-of-project surprises.' ],
 						[ 'title' => 'Locked Selections', 'desc' => 'Once chosen, selections are documented and locked, keeping your schedule and budget on track.' ],
 					],
 				],
@@ -396,7 +396,7 @@ function dch_fse_service_child_data(): array {
 					'type'    => 'split',
 					'eyebrow' => 'Why It Matters',
 					'heading' => 'Where budgets are usually won or lost',
-					'body'    => '<p>Finishes and upgrades are where custom-home budgets most often slip. A structured selections process turns that risk into one of the most enjoyable parts of your build.</p><p>With controlled allowances and transparent pricing, you make confident decisions &mdash; and we protect both your budget and your timeline.</p>',
+					'body'    => '<p>Finishes and upgrades are where custom-home budgets most often slip. A structured selections process turns that risk into one of the most enjoyable parts of your build.</p><p>With controlled allowances and transparent pricing, you make confident decisions, and we protect both your budget and your timeline.</p>',
 					'image'   => '/wp-content/themes/dch-fse/assets/images/svc-selections-detail.webp',
 					'image_alt' => 'Custom fireplace finish detail in a Dynamic Custom Homes build',
 				],
@@ -406,10 +406,10 @@ function dch_fse_service_child_data(): array {
 		'project-management' => [
 			'eyebrow' => 'Project Management',
 			'title' => 'Dedicated Project Management &amp; Client Portal',
-			'lede' => 'Every Dynamic Custom Homes build gets a dedicated project manager and an online client portal &mdash; weekly updates, jobsite photos, schedule visibility, and one point of contact from groundbreaking to move-in.',
+			'lede' => 'Every Dynamic Custom Homes build gets a dedicated project manager and an online client portal: weekly updates, jobsite photos, schedule visibility, and one point of contact from groundbreaking to move-in.',
 			'image' => '/wp-content/themes/dch-fse/assets/images/svc-pm-hero.webp',
 			'image_alt' => 'Home study in a Dynamic Custom Homes custom build',
-			'card_desc' => 'A dedicated PM and online portal for every build &mdash; weekly updates, photos, schedule visibility, and one point of contact.',
+			'card_desc' => 'A dedicated PM and online portal for every build: weekly updates, photos, schedule visibility, and one point of contact.',
 			'card_image' => '/wp-content/themes/dch-fse/assets/images/about-52.jpg',
 			'blocks'    => [
 				[
@@ -418,7 +418,7 @@ function dch_fse_service_child_data(): array {
 					'heading' => 'Always know where your home stands',
 					'lede'    => 'Building a home shouldn&rsquo;t mean chasing your builder for answers. Our process keeps you informed at every step.',
 					'tiles'   => [
-						[ 'icon' => 'point', 'title' => 'A Single Point of Contact', 'desc' => 'One dedicated project manager who knows your build inside and out &mdash; no runaround.' ],
+						[ 'icon' => 'point', 'title' => 'A Single Point of Contact', 'desc' => 'One dedicated project manager who knows your build inside and out, with no runaround.' ],
 						[ 'icon' => 'vision', 'title' => 'Photo Timeline', 'desc' => 'Regular jobsite photos document your home&rsquo;s progress from foundation to finish.' ],
 						[ 'icon' => 'speed', 'title' => 'Schedule Visibility', 'desc' => 'See upcoming milestones and what&rsquo;s happening next, updated as the build moves.' ],
 						[ 'icon' => 'finishes', 'title' => 'Weekly Updates', 'desc' => 'Consistent written updates so you&rsquo;re never left wondering what&rsquo;s going on.' ],
@@ -428,7 +428,7 @@ function dch_fse_service_child_data(): array {
 					'type'    => 'split',
 					'eyebrow' => 'Why It Matters',
 					'heading' => 'Communication is the difference',
-					'body'    => '<p>Ask anyone who has built a home: the difference between a great experience and a stressful one usually comes down to communication.</p><p>Our client portal and dedicated project managers exist to give you visibility and peace of mind &mdash; and to let us take on your build with the organization it deserves.</p>',
+					'body'    => '<p>Ask anyone who has built a home: the difference between a great experience and a stressful one usually comes down to communication.</p><p>Our client portal and dedicated project managers exist to give you visibility and peace of mind, and to let us take on your build with the organization it deserves.</p>',
 					'image'   => '/wp-content/themes/dch-fse/assets/images/svc-pm-detail.webp',
 					'image_alt' => 'Great room in a Dynamic Custom Homes custom home',
 				],
@@ -438,20 +438,20 @@ function dch_fse_service_child_data(): array {
 		'renovation-additions' => [
 			'eyebrow' => 'Renovation &amp; Additions',
 			'title' => 'Whole-Home Renovations &amp; Large Additions in Central Texas',
-			'lede' => 'For major transformations &mdash; whole-home renovations, second-story additions, and large-scale expansions &mdash; Dynamic Custom Homes brings new-build discipline to your existing home across San Antonio and the Hill Country.',
+			'lede' => 'For major transformations like whole-home renovations, second-story additions, and large-scale expansions, Dynamic Custom Homes brings new-build discipline to your existing home across San Antonio and the Hill Country.',
 			'image' => '/wp-content/themes/dch-fse/assets/images/svc-renovation-hero.webp',
 			'image_alt' => 'Transformed great room in a Dynamic Custom Homes renovation',
-			'card_desc' => 'Whole-home renovations, second-story additions, and major expansions &mdash; new-build discipline applied to your existing home.',
+			'card_desc' => 'Whole-home renovations, second-story additions, and major expansions, with new-build discipline applied to your existing home.',
 			'card_image' => '/wp-content/themes/dch-fse/assets/images/project-graystone-circle.jpg',
 			'blocks'    => [
 				[
 					'type'    => 'tiles',
 					'eyebrow' => 'What We Take On',
 					'heading' => 'The projects most remodelers won&rsquo;t',
-					'lede'    => 'This is the big end of remodeling &mdash; structural, complex work that benefits from a custom-home builder&rsquo;s planning and crews.',
+					'lede'    => 'This is the big end of remodeling: structural, complex work that benefits from a custom-home builder&rsquo;s planning and crews.',
 					'tiles'   => [
 						[ 'icon' => 'whole', 'title' => 'Whole-Home Renovations', 'desc' => 'Top-to-bottom transformations that reimagine how an entire home lives.' ],
-						[ 'icon' => 'additions', 'title' => 'Second-Story &amp; Large Additions', 'desc' => 'Adding square footage up or out &mdash; engineered and integrated to feel original.' ],
+						[ 'icon' => 'additions', 'title' => 'Second-Story &amp; Large Additions', 'desc' => 'Adding square footage up or out, engineered and integrated to feel original.' ],
 						[ 'icon' => 'materials', 'title' => 'Structural Reconfiguration', 'desc' => 'Moving walls, raising ceilings, and re-planning layouts to modern standards.' ],
 						[ 'icon' => 'finishes', 'title' => 'Historic &amp; High-End Updates', 'desc' => 'Sensitive, high-quality updates for established and character homes.' ],
 					],
@@ -460,7 +460,7 @@ function dch_fse_service_child_data(): array {
 					'type'    => 'split',
 					'eyebrow' => 'How We&rsquo;re Different',
 					'heading' => 'New-build discipline for a bigger remodel',
-					'body'    => '<p>Large renovations and additions carry many of the same risks as building new &mdash; structural work, permitting, and long timelines. Treating them like a simple remodel is how projects go sideways.</p><p>Our renovation division applies the same planning, engineering coordination, and project management we bring to ground-up custom homes, so your major project stays on schedule and on budget.</p>',
+					'body'    => '<p>Large renovations and additions carry many of the same risks as building new: structural work, permitting, and long timelines. Treating them like a simple remodel is how projects go sideways.</p><p>Our renovation division applies the same planning, engineering coordination, and project management we bring to ground-up custom homes, so your major project stays on schedule and on budget.</p>',
 					'image'   => '/wp-content/themes/dch-fse/assets/images/svc-renovation-detail.webp',
 					'image_alt' => 'Open-concept living and kitchen in a Dynamic Custom Homes renovation',
 				],
@@ -690,7 +690,7 @@ function dch_fse_services_index_render(): string {
 			<header class="dch-services-tiles__head" data-dch-anim="block">
 				<p class="dch-services-tiles__eyebrow">What We Do</p>
 				<h2 class="dch-services-tiles__heading">Explore our services</h2>
-				<p class="dch-services-tiles__lede">From custom home building and design-build to remodels, outdoor living, and homeowner care &mdash; every service Dynamic Custom Homes offers across San Antonio and the Texas Hill Country.</p>
+				<p class="dch-services-tiles__lede">From custom home building and design-build to remodels, outdoor living, and homeowner care, every service Dynamic Custom Homes offers across San Antonio and the Texas Hill Country.</p>
 			</header>
 			<div class="dch-services-index__grid" data-dch-anim="block">
 				<?php foreach ( $order as $slug ) : ?>

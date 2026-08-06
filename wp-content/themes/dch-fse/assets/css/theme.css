@@ -1624,7 +1624,7 @@ a.dch-services__card:hover .dch-services__card-icon {
  * ===========================================================================*/
 
 .dch-gallery {
-	padding: 0 0 120px;
+	padding: 0;
 	background: var(--dch-hero-bg, #FFFCF2);
 }
 
@@ -1898,6 +1898,7 @@ a.dch-services__card:hover .dch-services__card-icon {
 .dch-marquee {
 	width: 100%;
 	height: 140px;
+	margin: 0;
 	background: #BEAB7B;
 	overflow: hidden;
 	display: flex;
@@ -1979,6 +1980,8 @@ a.dch-services__card:hover .dch-services__card-icon {
 	--dch-footer-max: 1290px;
 	--dch-accent: #E0592E;
 }
+
+footer.wp-block-template-part { margin-block-start: 0; }
 
 .dch-footer {
 	background: var(--dch-footer-bg);

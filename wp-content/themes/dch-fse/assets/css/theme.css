@@ -724,7 +724,7 @@ body.dch-mobile-open .dch-mobile__panel { transform: translateX(0); }
 /* 4-column grid of service cards */
 .dch-services__grid {
 	display: grid;
-	grid-template-columns: repeat(4, 300px);
+	grid-template-columns: repeat(4, minmax(0, 300px));
 	gap: 30px;
 	justify-content: center;
 	margin-top: 42px;
@@ -1120,8 +1120,8 @@ a.dch-services__card:hover .dch-services__card-icon {
 /* Top row: photo + copy */
 .dch-why__main {
 	display: grid;
-	grid-template-columns: 631px 540px;
-	gap: 119px;
+	grid-template-columns: minmax(0, 631fr) minmax(0, 540fr);
+	gap: clamp(40px, 6vw, 119px);
 	align-items: start;
 }
 
@@ -2052,7 +2052,7 @@ footer.wp-block-template-part { margin-block-start: 0; }
 /* Heading-less link column: nudge it down to line up with the other lists. */
 nav.dch-footer__col:not(:has(.dch-footer__heading)) { padding-top: 47px; }
 
-.dch-footer__contact a { display: inline-flex; align-items: center; gap: 10px; }
+.dch-footer__contact a { display: inline-flex; align-items: flex-start; gap: 10px; min-width: 0; overflow-wrap: anywhere; }
 .dch-footer__icon { display: inline-flex; color: var(--dch-accent); flex: 0 0 auto; }
 .dch-footer__icon svg { display: block; }
 
@@ -3581,6 +3581,7 @@ a.dch-contact-page__label:focus-visible { color: #E0592E; outline: none; }
 	background-color: #ECE6D8;
 	min-height: 540px;
 	aspect-ratio: 836 / 755;
+	max-width: 100%;
 }
 .dch-about-hero__copy {
 	display: flex;

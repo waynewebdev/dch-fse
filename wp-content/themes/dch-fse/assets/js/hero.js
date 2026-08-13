@@ -67,13 +67,23 @@
 			lines.forEach(function (line) {
 				var text = line.textContent;
 				line.textContent = '';
+				// Group each word's chars in an inline-block wrapper so the line
+				// only breaks at spaces (between words), never mid-word. Without
+				// this, each inline-block char is its own break opportunity and a
+				// long word like "Legacies" splits as "Le / gacies".
+				var word = null;
 				for (var i = 0; i < text.length; i++) {
 					var ch = text.charAt(i);
-					if (ch === ' ') { line.appendChild(document.createTextNode(' ')); continue; }
+					if (ch === ' ') { word = null; line.appendChild(document.createTextNode(' ')); continue; }
+					if (!word) {
+						word = document.createElement('span');
+						word.className = 'dch-anim-word';
+						line.appendChild(word);
+					}
 					var s = document.createElement('span');
 					s.className = 'dch-anim-char';
 					s.textContent = ch;
-					line.appendChild(s);
+					word.appendChild(s);
 					spans.push(s);
 				}
 			});

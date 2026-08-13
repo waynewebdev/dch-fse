@@ -475,6 +475,9 @@ body.dch-mobile-open .dch-mobile__panel { transform: translateX(0); }
 .dch-hero__dot:focus { background: rgba(255, 255, 255, 0.85); }
 
 /* Char-by-char animation: each char wrapped in span.dch-anim-char */
+/* Keeps a word's per-char spans on one line so wrapping only breaks at
+ * spaces, never mid-word. */
+.dch-anim-word { display: inline-block; white-space: nowrap; }
 .dch-anim-char {
 	display: inline-block;
 	opacity: 0;

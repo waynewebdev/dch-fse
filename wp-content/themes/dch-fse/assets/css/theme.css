@@ -1694,6 +1694,7 @@ a.dch-services__card:hover .dch-services__card-icon {
 	height: 563px;
 	overflow: hidden;
 	position: relative;
+	touch-action: pan-y;
 }
 
 .dch-gallery__track {
@@ -1716,6 +1717,8 @@ a.dch-services__card:hover .dch-services__card-icon {
 	height: 100%;
 	object-fit: cover;
 	display: block;
+	-webkit-user-drag: none;
+	user-select: none;
 }
 
 .dch-gallery__controls {

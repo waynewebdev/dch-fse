@@ -16,6 +16,7 @@ $dch_fse_modules = [
 	'project-page',
 	'service-child',
 	'area-page',
+	'testimonial',
 	'blog-loop',
 	'search-loop',
 	'single-post',

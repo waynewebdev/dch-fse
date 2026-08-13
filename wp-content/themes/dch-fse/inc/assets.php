@@ -102,28 +102,14 @@ add_action( 'wp_enqueue_scripts', static function (): void {
 }, 100 );
 
 /**
- * Rewrite the theme.css <link> as a non-blocking preload-then-swap with a
- * <noscript> fallback for crawlers and JS-disabled clients.
- */
-add_filter( 'style_loader_tag', static function ( string $html, string $handle, string $href, string $media ): string {
-	if ( DCH_FSE_THEME_HANDLE !== $handle ) {
-		return $html;
-	}
-
-	$href_attr  = esc_url( $href );
-	$media_attr = esc_attr( $media );
-
-	return sprintf(
-		'<link rel="preload" as="style" href="%1$s" media="%2$s" onload="this.onload=null;this.rel=\'stylesheet\'" />' . "\n"
-		. '<noscript><link rel="stylesheet" href="%1$s" media="%2$s" /></noscript>' . "\n",
-		$href_attr,
-		$media_attr
-	);
-}, 10, 4 );
-
-/**
  * Inline /assets/css/critical.css inside <style> at the top of <head>.
  * Skips silently if the file does not exist.
+ *
+ * NOTE: theme.css is loaded render-blocking (a normal <link rel="stylesheet">).
+ * A previous non-blocking preload-then-swap was removed because it caused a
+ * flash of unstyled content: the page painted before theme.css applied, and
+ * the critical.css this pattern depends on was never shipped. If a proper
+ * critical.css is added here later, the async swap can be reintroduced.
  */
 function dch_fse_inline_critical_css(): void {
 	$path = get_template_directory() . '/assets/css/critical.css';

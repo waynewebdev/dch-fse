@@ -160,6 +160,16 @@ function dch_fse_project_render_body(): string {
 	$parts    = dch_fse_project_parse_content( (string) $post->post_content );
 	$page_title = get_the_title( $post );
 	$subtitle = (string) get_post_meta( $post->ID, '_dch_project_subtitle', true );
+
+	// Some clients prefer not to have their names published — drop any
+	// "Client" meta row entirely, leaving the remaining rows (e.g. Our
+	// Services + Project Focus) in the meta grid.
+	$parts['meta'] = array_values( array_filter(
+		$parts['meta'],
+		static function ( array $row ): bool {
+			return false === stripos( $row['label'], 'client' );
+		}
+	) );
 	$thumb    = get_the_post_thumbnail(
 		$post,
 		'large',

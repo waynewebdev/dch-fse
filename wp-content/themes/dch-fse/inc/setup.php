@@ -93,3 +93,14 @@ add_action( 'init', static function (): void {
 		return gmdate( 'Y' );
 	} );
 } );
+
+/**
+ * Year Dynamic Custom Homes was founded. Single source of truth for every
+ * "years in business" figure so they stay accurate and update each year.
+ */
+const DCH_FSE_FOUNDED_YEAR = 2015;
+
+/** Whole years in business as of now (never below 1). */
+function dch_fse_years_in_business(): int {
+	return max( 1, (int) current_time( 'Y' ) - DCH_FSE_FOUNDED_YEAR );
+}

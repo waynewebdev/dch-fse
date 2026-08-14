@@ -6,6 +6,13 @@
 		el.textContent = new Date().getFullYear();
 	});
 
+	// Years in business: fill [data-dch-years-since="YYYY"] with
+	// (current year - YYYY) so experience figures update each year.
+	document.querySelectorAll('[data-dch-years-since]').forEach(function (el) {
+		var since = parseInt(el.getAttribute('data-dch-years-since'), 10);
+		if (since) el.textContent = String(Math.max(1, new Date().getFullYear() - since));
+	});
+
 	/* ----------------------------------------------------------------------
 	 * Scroll-to-top button. Reveals after the user has scrolled roughly one
 	 * viewport, smooth-scrolls back to the top on click.

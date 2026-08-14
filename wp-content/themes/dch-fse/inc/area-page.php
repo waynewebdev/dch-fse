@@ -90,7 +90,7 @@ function dch_fse_area_data(): array {
 			'card_image'    => $theme_img . 'area-san-antonio.jpg',
 			'eyebrow'       => 'San Antonio, Texas',
 			'title'         => 'Custom Home Builder in San Antonio, Texas',
-			'lede'          => 'Dynamic Custom Homes is San Antonio&rsquo;s trusted custom home builder with over 17 years of experience building homes across the city&rsquo;s most desirable neighborhoods. Owner Joshua Maas is a third-generation San Antonio builder who treats every project like his own home.',
+			'lede'          => 'Dynamic Custom Homes is San Antonio&rsquo;s trusted custom home builder with over ' . dch_fse_years_in_business() . ' years of experience building homes across the city&rsquo;s most desirable neighborhoods. Owner Joshua Maas is a second-generation San Antonio builder who treats every project like his own home.',
 			'image'         => $theme_img . 'area-san-antonio.jpg',
 			'image_alt'     => 'Custom home in San Antonio by Dynamic Custom Homes',
 			'communities'   => [
@@ -114,7 +114,7 @@ function dch_fse_area_data(): array {
 			'card_image'    => $theme_img . 'area-boerne.jpg',
 			'eyebrow'       => 'Boerne, Texas',
 			'title'         => 'Custom Home Builder in Boerne, Texas',
-			'lede'          => 'Build your custom home in Boerne, TX with Dynamic Custom Homes. We&rsquo;re an award-winning Hill Country builder with over 17 years of experience, and we build homes that fit Boerne&rsquo;s small-town character without giving up modern comfort.',
+			'lede'          => 'Build your custom home in Boerne, TX with Dynamic Custom Homes. We&rsquo;re an award-winning Hill Country builder with over ' . dch_fse_years_in_business() . ' years of experience, and we build homes that fit Boerne&rsquo;s small-town character without giving up modern comfort.',
 			'image'         => $theme_img . 'area-boerne.jpg',
 			'image_alt'     => 'Custom home in Boerne, TX by Dynamic Custom Homes',
 			'communities'   => [
@@ -138,7 +138,7 @@ function dch_fse_area_data(): array {
 			'card_image'    => $theme_img . 'area-new-braunfels.jpg',
 			'eyebrow'       => 'New Braunfels, Texas',
 			'title'         => 'Custom Home Builder in New Braunfels, Texas',
-			'lede'          => 'Dynamic Custom Homes builds custom homes in New Braunfels, TX and the surrounding Comal County area. With over 17 years of building experience in Central Texas, we know the appeal and the building requirements of this fast-growing community.',
+			'lede'          => 'Dynamic Custom Homes builds custom homes in New Braunfels, TX and the surrounding Comal County area. With over ' . dch_fse_years_in_business() . ' years of building experience in Central Texas, we know the appeal and the building requirements of this fast-growing community.',
 			'image'         => $theme_img . 'area-new-braunfels.jpg',
 			'image_alt'     => 'Custom home in New Braunfels by Dynamic Custom Homes',
 			'communities'   => [
@@ -162,7 +162,7 @@ function dch_fse_area_data(): array {
 			'card_image'    => $theme_img . 'area-hill-country.jpg',
 			'eyebrow'       => 'Texas Hill Country',
 			'title'         => 'Hill Country Custom Home Builder',
-			'lede'          => 'Dynamic Custom Homes is your trusted custom home builder in the Texas Hill Country. With over 17 years building across the region, we understand its terrain, climate, and lifestyle.',
+			'lede'          => 'Dynamic Custom Homes is your trusted custom home builder in the Texas Hill Country. With over ' . dch_fse_years_in_business() . ' years building across the region, we understand its terrain, climate, and lifestyle.',
 			'image'         => $theme_img . 'area-hill-country.jpg',
 			'image_alt'     => 'Hill Country custom home by Dynamic Custom Homes',
 			'communities'   => [
@@ -187,7 +187,7 @@ function dch_fse_area_data(): array {
 			'card_image'    => $theme_img . 'area-marble-falls.webp',
 			'eyebrow'       => 'Marble Falls, Texas',
 			'title'         => 'Custom Home Builder in Marble Falls, Texas',
-			'lede'          => 'Dynamic Custom Homes builds custom homes in Marble Falls and across the Highland Lakes. With over 17 years of experience in the Texas Hill Country, we understand the granite terrain, lakefront lots, and relaxed river-and-lake lifestyle that make this corner of Burnet County special.',
+			'lede'          => 'Dynamic Custom Homes builds custom homes in Marble Falls and across the Highland Lakes. With over ' . dch_fse_years_in_business() . ' years of experience in the Texas Hill Country, we understand the granite terrain, lakefront lots, and relaxed river-and-lake lifestyle that make this corner of Burnet County special.',
 			'image'         => $theme_img . 'area-marble-falls.webp',
 			'image_alt'     => 'Lake Marble Falls in the Texas Hill Country',
 			'communities'   => [
@@ -211,7 +211,7 @@ function dch_fse_area_data(): array {
 			'card_image'    => $theme_img . 'area-horseshoe-bay.webp',
 			'eyebrow'       => 'Horseshoe Bay, Texas',
 			'title'         => 'Custom Home Builder in Horseshoe Bay, Texas',
-			'lede'          => 'Dynamic Custom Homes builds custom and luxury homes in Horseshoe Bay, the resort community on the shores of Lake LBJ. With over 17 years of Hill Country experience, we specialize in waterfront and golf-course homes built to the exacting standards this community is known for.',
+			'lede'          => 'Dynamic Custom Homes builds custom and luxury homes in Horseshoe Bay, the resort community on the shores of Lake LBJ. With over ' . dch_fse_years_in_business() . ' years of Hill Country experience, we specialize in waterfront and golf-course homes built to the exacting standards this community is known for.',
 			'image'         => $theme_img . 'area-horseshoe-bay.webp',
 			'image_alt'     => 'Waterfront homes on Lake LBJ in Horseshoe Bay, Texas',
 			'communities'   => [
@@ -236,7 +236,7 @@ function dch_fse_area_data(): array {
 			'card_image'    => $theme_img . 'area-canyon-lake.webp',
 			'eyebrow'       => 'Canyon Lake, Texas',
 			'title'         => 'Custom Home Builder in Canyon Lake, Texas',
-			'lede'          => 'Dynamic Custom Homes builds custom homes around Canyon Lake, the Hill Country reservoir between New Braunfels and San Antonio. With over 17 years of Comal County experience, we build on the wooded, often-sloped lots that surround the lake, with the drainage and foundation know-how they require.',
+			'lede'          => 'Dynamic Custom Homes builds custom homes around Canyon Lake, the Hill Country reservoir between New Braunfels and San Antonio. With over ' . dch_fse_years_in_business() . ' years of Comal County experience, we build on the wooded, often-sloped lots that surround the lake, with the drainage and foundation know-how they require.',
 			'image'         => $theme_img . 'area-canyon-lake.webp',
 			'image_alt'     => 'Canyon Lake in the Texas Hill Country',
 			'communities'   => [
@@ -248,7 +248,7 @@ function dch_fse_area_data(): array {
 			'split' => [
 				'eyebrow'   => 'Why Canyon Lake',
 				'heading'   => 'Lakeside Hill Country living',
-				'body'      => '<p>Canyon Lake has miles of shoreline, clear water, and wooded hills within an easy drive of both San Antonio and Austin, a quieter, more natural alternative to the busier lake towns.</p><p>Building here means designing for views and the outdoors while managing sloped, rocky lots and mature trees, exactly the terrain we know from nearly two decades of building across Comal County.</p>',
+				'body'      => '<p>Canyon Lake has miles of shoreline, clear water, and wooded hills within an easy drive of both San Antonio and Austin, a quieter, more natural alternative to the busier lake towns.</p><p>Building here means designing for views and the outdoors while managing sloped, rocky lots and mature trees, exactly the terrain we know from over ' . dch_fse_years_in_business() . ' years of building across Comal County.</p>',
 				'image'     => $theme_img . 'area-canyon-lake-home.webp',
 				'image_alt' => 'Canyon Lake custom home built by Dynamic Custom Homes',
 			],
@@ -268,7 +268,7 @@ function dch_fse_areas_listing_render(): string {
 		<div class="dch-page-intro__inner">
 			<p class="dch-page-intro__eyebrow" data-dch-anim="block">Where We Build</p>
 			<h1 class="dch-page-intro__title" data-dch-anim="block">Areas we serve across Central Texas</h1>
-			<p class="dch-page-intro__lede" data-dch-anim="block">Dynamic Custom Homes builds custom homes throughout Central Texas. With over 17 years of experience, we know the building requirements, lot conditions, and lifestyle of each community we serve, from urban San Antonio to remote Hill Country acreage.</p>
+			<p class="dch-page-intro__lede" data-dch-anim="block">Dynamic Custom Homes builds custom homes throughout Central Texas. With over <?php echo (int) dch_fse_years_in_business(); ?> years of experience, we know the building requirements, lot conditions, and lifestyle of each community we serve, from urban San Antonio to remote Hill Country acreage.</p>
 		</div>
 	</section>
 

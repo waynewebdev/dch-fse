@@ -4008,7 +4008,7 @@ a.dch-contact-page__label:hover { color: #E0592E; outline: none; }
 }
 .dch-about-stats__grid {
 	display: grid;
-	grid-template-columns: repeat(4, minmax(0, 1fr));
+	grid-template-columns: repeat(3, minmax(0, 1fr));
 	gap: 30px;
 	list-style: none;
 	margin: 0;

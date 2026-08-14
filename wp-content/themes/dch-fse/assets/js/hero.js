@@ -104,6 +104,10 @@
 	function setupCounter(el) {
 		var from = parseInt(el.getAttribute('data-from') || '0', 10);
 		var to = parseInt(el.getAttribute('data-to') || '0', 10);
+		// data-since="YYYY": count to (current year - YYYY) so "years in
+		// business" figures update automatically each year.
+		var since = parseInt(el.getAttribute('data-since') || '0', 10);
+		if (since) to = Math.max(1, new Date().getFullYear() - since);
 		var duration = parseInt(el.getAttribute('data-duration') || '1500', 10);
 
 		if (prefersReduced) { el.textContent = String(to); return; }

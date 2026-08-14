@@ -192,16 +192,26 @@
 		if (slides.length < 2) return;
 
 		// Clone head & tail for seamless loop. Three groups total: [tail][orig][head].
+		// Both clone groups must keep the originals' ORDER, so the slide directly
+		// left of the first original is the *last* image and the slide directly
+		// right of the last original is the *first* image (correct wrap-around).
 		var clonesPerSide = slides.length;
+		// Head clones: append copies in order -> [..orig.., c0, c1, .. cN-1].
 		slides.forEach(function (s) {
 			var c = s.cloneNode(true);
 			c.setAttribute('aria-hidden', 'true');
 			track.appendChild(c);
 		});
+		// Tail clones: insert copies in order before a STABLE reference (the first
+		// original), so the group reads [c0, c1, .. cN-1, ..orig..]. Inserting at
+		// track.firstChild instead would reverse the group and place a clone of the
+		// first image immediately left of the first image — a visible duplicate at
+		// the load position.
+		var firstOriginal = track.firstChild;
 		slides.forEach(function (s) {
 			var c = s.cloneNode(true);
 			c.setAttribute('aria-hidden', 'true');
-			track.insertBefore(c, track.firstChild);
+			track.insertBefore(c, firstOriginal);
 		});
 
 		var totalSlides = slides.length; // original count

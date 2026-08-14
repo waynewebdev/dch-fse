@@ -170,6 +170,23 @@ function dch_fse_project_render_body(): string {
 			return false === stripos( $row['label'], 'client' );
 		}
 	) );
+
+	// Placeholder Project Overview so EVERY project shows the section, even
+	// before its real write-up exists. Anything the project already provides
+	// wins; final per-project wording is being supplied by the client.
+	if ( '' === $parts['intro'] ) {
+		$parts['intro'] = 'Dynamic Custom Homes delivers landmark structures, merging skill, technology, and green methods. Each project reflects our drive for quality, trust, and craftsmanship in every community we serve.';
+	}
+	if ( '' === $parts['subheading'] ) {
+		$parts['subheading'] = 'A custom home built to the standard Dynamic Custom Homes is known for.';
+	}
+	if ( empty( $parts['meta'] ) ) {
+		$parts['meta'] = [
+			[ 'label' => 'Project Focus', 'value' => 'Custom Home' ],
+			[ 'label' => 'Our Services', 'value' => 'Design, Construction' ],
+		];
+	}
+
 	$thumb    = get_the_post_thumbnail(
 		$post,
 		'large',

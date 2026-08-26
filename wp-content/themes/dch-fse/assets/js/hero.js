@@ -218,17 +218,36 @@
 		var idx = 0; // index within the original group
 		var animating = false;
 
+		function gapPx() {
+			return parseFloat(getComputedStyle(track).gap || '0') || 0;
+		}
+
+		// Left edge of the child at DOM index `k`, summing the real widths of
+		// everything before it (+ the flex gap). Measured with
+		// getBoundingClientRect().width so mixed slide widths (portrait vs
+		// landscape) add up exactly; an ancestor translateX doesn't affect it.
+		function slideLeft(k) {
+			var gap = gapPx(), x = 0, kids = track.children;
+			for (var i = 0; i < k; i++) {
+				x += kids[i].getBoundingClientRect().width + gap;
+			}
+			return x;
+		}
+
+		// Width (+ gap) of the active slide. Slides can differ in width now, so
+		// the swipe threshold measures the active one rather than assuming a
+		// fixed step.
 		function slideStep() {
-			var s = track.children[clonesPerSide]; // first original slide
-			return s.getBoundingClientRect().width + parseFloat(getComputedStyle(track).gap || '0');
+			var active = track.children[clonesPerSide + idx];
+			return active.getBoundingClientRect().width + gapPx();
 		}
 
 		function position(instant) {
-			var step = slideStep();
+			var active = track.children[clonesPerSide + idx];
 			var viewportW = viewport.getBoundingClientRect().width;
-			var slideW = step - parseFloat(getComputedStyle(track).gap || '0');
-			// center the active slide horizontally
-			var offset = (viewportW - slideW) / 2 - step * (clonesPerSide + idx);
+			var slideW = active.getBoundingClientRect().width;
+			// center the active slide horizontally within the viewport
+			var offset = (viewportW - slideW) / 2 - slideLeft(clonesPerSide + idx);
 			if (instant) {
 				track.classList.add('is-instant');
 				track.style.transform = 'translateX(' + offset + 'px)';

@@ -1707,13 +1707,18 @@ a.dch-services__card:hover .dch-services__card-icon {
 .dch-gallery__track.is-instant { transition: none; }
 
 .dch-gallery__slide {
-	flex: 0 0 844px;
+	/* Width is driven by the image: every slide is the viewport height tall
+	   and as wide as that image's aspect ratio needs. Landscape shots stay
+	   wide, portrait shots become tall-and-narrow — nothing is cropped. */
+	flex: 0 0 auto;
+	width: auto;
 	height: 100%;
 	margin: 0;
 	overflow: hidden;
+	background: #ECE6D8;
 }
 .dch-gallery__slide img {
-	width: 100%;
+	width: auto;
 	height: 100%;
 	object-fit: cover;
 	display: block;
@@ -1748,12 +1753,10 @@ a.dch-services__card:hover .dch-services__card-icon {
 
 @media (max-width: 1199.98px) {
 	.dch-gallery__viewport { height: 460px; }
-	.dch-gallery__slide { flex-basis: 680px; }
 	.dch-gallery__controls { padding-inline: 40px; }
 }
 @media (max-width: 767.98px) {
 	.dch-gallery__viewport { height: 320px; }
-	.dch-gallery__slide { flex-basis: min(85vw, 480px); }
 	.dch-gallery__controls { padding-inline: 24px; }
 }
 
@@ -2067,7 +2070,7 @@ footer.wp-block-template-part { margin-block-start: 0; }
 
 .dch-footer__inner {
 	display: grid;
-	grid-template-columns: 1fr 190px 190px 190px;
+	grid-template-columns: 1fr 165px 165px 300px;
 	gap: 30px;
 	max-width: var(--dch-footer-max);
 	margin-inline: auto;
@@ -2129,7 +2132,7 @@ footer.wp-block-template-part { margin-block-start: 0; }
 /* Heading-less link column: nudge it down to line up with the other lists. */
 nav.dch-footer__col:not(:has(.dch-footer__heading)) { padding-top: 47px; }
 
-.dch-footer__contact a { display: inline-flex; align-items: flex-start; gap: 10px; min-width: 0; overflow-wrap: anywhere; }
+.dch-footer__contact a { display: inline-flex; align-items: flex-start; gap: 10px; min-width: 0; overflow-wrap: break-word; }
 .dch-footer__icon { display: inline-flex; color: var(--dch-accent); flex: 0 0 auto; }
 .dch-footer__icon svg { display: block; }
 
@@ -2357,7 +2360,7 @@ nav.dch-footer__col:not(:has(.dch-footer__heading)) { padding-top: 47px; }
 .dch-project-card__body {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
 	gap: 30px;
 	padding: 45px 40px;
 }

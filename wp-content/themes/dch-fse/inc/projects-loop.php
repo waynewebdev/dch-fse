@@ -45,25 +45,12 @@ add_action( 'init', static function (): void {
 } );
 
 /**
- * Strip block markup, shortcodes, HTML and trim to ~28 words for the card
- * description. Intentionally short so each card has a consistent silhouette.
- */
-function dch_fse_projects_card_excerpt( WP_Post $post ): string {
-	$raw = has_excerpt( $post ) ? $post->post_excerpt : $post->post_content;
-	$raw = strip_shortcodes( $raw );
-	$raw = excerpt_remove_blocks( $raw );
-	$raw = wp_strip_all_tags( $raw, true );
-	return wp_trim_words( $raw, 28, '&hellip;' );
-}
-
-/**
  * Render a single project card matching elementor-element-edda73a.
  */
 function dch_fse_projects_render_card( WP_Post $post ): string {
 	$permalink = get_permalink( $post );
 	$title     = get_the_title( $post );
 	$subtitle  = (string) get_post_meta( $post->ID, DCH_FSE_PROJECTS_SUBTITLE_KEY, true );
-	$desc      = dch_fse_projects_card_excerpt( $post );
 
 	$thumb_html = get_the_post_thumbnail(
 		$post,
@@ -96,9 +83,6 @@ function dch_fse_projects_render_card( WP_Post $post ): string {
 				</h2>
 				<?php if ( '' !== $subtitle ) : ?>
 					<p class="dch-project-card__meta"><?php echo esc_html( $subtitle ); ?></p>
-				<?php endif; ?>
-				<?php if ( '' !== $desc ) : ?>
-					<p class="dch-project-card__desc"><?php echo esc_html( $desc ); ?></p>
 				<?php endif; ?>
 			</div>
 			<a class="dch-project-card__cta" href="<?php echo esc_url( $permalink ); ?>">

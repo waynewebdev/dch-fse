@@ -33,9 +33,13 @@ function dch_fse_project_norm_basename( string $filename ): string {
 	$base = strtolower( basename( $filename ) );
 	$base = preg_replace( '/\.[a-z0-9]+$/', '', $base );
 	$base = str_replace( '-scaled', '', $base );
-	// Strip size variants like `-1024x682` and trailing `-N` duplicate suffix.
+	// Strip size variants like `-1024x682` and WordPress's duplicate-filename
+	// suffix (the `-1`, `-2` left behind after `-scaled` removal). The dupe
+	// suffix is bounded to 1-2 digits so real photo numbers such as `-9147`
+	// or `-0013` are preserved — otherwise every `project-9147`, `project-9140`
+	// … collapses to the same slug and gets wrongly treated as one picture.
 	$base = preg_replace( '/-\d+x\d+/', '', $base );
-	$base = preg_replace( '/-\d+$/', '', $base );
+	$base = preg_replace( '/-\d{1,2}$/', '', $base );
 	$base = preg_replace( '/[-_]+/', '-', $base );
 	return trim( (string) $base, '-' );
 }
@@ -396,6 +400,12 @@ function dch_fse_project_render_gallery(): string {
 					if ( '' === $alt ) {
 						$alt = get_the_title( $post );
 					}
+					// No width/height override: let wp_get_attachment_image emit
+					// each image's true dimensions so the browser knows its real
+					// aspect ratio. The gallery CSS sizes every slide to that
+					// ratio at a shared height, so portrait photos show in full
+					// (never cropped) instead of being forced into a 844x563
+					// landscape box.
 					$img = wp_get_attachment_image(
 						$aid,
 						'large',
@@ -405,8 +415,6 @@ function dch_fse_project_render_gallery(): string {
 							'alt'      => $alt,
 							'loading'  => 'lazy',
 							'decoding' => 'async',
-							'width'    => 844,
-							'height'   => 563,
 						]
 					);
 					if ( $img ) {
